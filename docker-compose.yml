@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    extends:
+      file: docker/docker-compose.base.yml
+      service: app
+    volumes:
+      - .:/usr/src/app/
